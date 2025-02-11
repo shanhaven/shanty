@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import {useDark, useToggle} from '@vueuse/core'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <main class="bg-white dark:bg-gray-800">
-    <h1>This is home page</h1>
-
-    <p>isDark: {{isDark}}</p>
-    <button class="px-4 py-2 text-white bg-teal-400 rounded-full" @click="toggleDark()" type="button">
-      Toggle Dark Mode Here
-    </button>
-  </main>
+  <section>
+    <h1 class="text-5xl font-semibold text-balance text-gray-900 dark:text-gray-50 sm:text-7xl text-center">Home</h1>
+  </section>
 </template>
+
+<style scoped>
+
+</style>
