@@ -1,6 +1,11 @@
 # shanty
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my personal portfolio built with Vue.js and TailwindCSS, showcasing my front-end development work.
+
+# Features
+- Dynamic project showcase
+- Responsive & mobile-friendly
+- Blog section with Vue 3
 
 ## Recommended IDE Setup
 
@@ -17,6 +22,8 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 ```sh
+git clone https://github.com/shanhaven/shanty.git
+cd shanty
 npm install
 ```
 
