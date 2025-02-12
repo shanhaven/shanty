@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import DarkModeToggle from '@/components/layouts/DarkModeToggle.vue'
 import TopNavigation from '@/components/layouts/TopNavigation.vue'
+import Footer from '@/components/layouts/Footer.vue'
 </script>
 
 <template>
@@ -12,6 +13,9 @@ import TopNavigation from '@/components/layouts/TopNavigation.vue'
     <RouterView />
   </main>
   <DarkModeToggle/>
+  <footer class="py-8">
+    <Footer/>
+  </footer>
 </template>
 
 <style scoped>
