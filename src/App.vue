@@ -1,34 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import DarkModeToggle from '@/components/layouts/DarkModeToggle.vue'
+import TopNavigation from '@/components/layouts/TopNavigation.vue'
 </script>
 
 <template>
-  <header class="bg-gray-100 dark:bg-gray-800 dark:text-white text-center py-2 border-b border-gray-200 dark:border-gray-800 relative z-10">
-    <nav>
-      <RouterLink
-        activeClass="text-teal-500"
-        exactActiveClass="text-teal-600"
-        to="/">Home</RouterLink> |
-      <RouterLink
-        activeClass="text-teal-500"
-        exactActiveClass="text-teal-600"
-        to="/about">About</RouterLink>  |
-      <RouterLink
-        activeClass="text-teal-500"
-        exactActiveClass="text-teal-600"
-        to="/projects">Projects</RouterLink> |
-      <RouterLink
-        activeClass="text-teal-500"
-        exactActiveClass="text-teal-600"
-        to="/blogs">Blogs</RouterLink> |
-      <RouterLink
-        activeClass="text-teal-500"
-        exactActiveClass="text-teal-600"
-        to="/contact">Contact</RouterLink>
-    </nav>
+  <header class="inset-x-0 top-0 z-50 bg-white dark:bg-gray-800">
+  <TopNavigation/>
   </header>
-  <main class="dark:bg-gray-900 min-h-vh min-h-screen">
+  <main class="dark:bg-gray-900 bg-white">
     <RouterView />
   </main>
   <DarkModeToggle/>

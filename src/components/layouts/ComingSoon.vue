@@ -8,7 +8,7 @@ const isDark = useDark();
 
 <template>
   <div style="margin-top:-41px"
-    class="container top-0 left-0 w-full h-screen bg-cover bg-bottom"
+    class="container top-0 left-0 w-full h-screen bg-contain bg-no-repeat bg-top"
     :style="{ backgroundImage: `url(${isDark ? Dark : Light})` }"
   >
   </div>
