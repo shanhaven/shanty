@@ -4,7 +4,7 @@ import DarkModeToggle from '@/components/layouts/DarkModeToggle.vue'
 </script>
 
 <template>
-  <header class="bg-gray-100 dark:bg-gray-800 dark:text-white text-center py-2 border-b border-gray-200 dark:border-gray-800">
+  <header class="bg-gray-100 dark:bg-gray-800 dark:text-white text-center py-2 border-b border-gray-200 dark:border-gray-800 relative z-10">
     <nav>
       <RouterLink
         activeClass="text-teal-500"
