@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+    body {
+        @apply bg-white text-gray-900 overflow-hidden;
+    }
+
+    .dark body {
+        @apply bg-gray-900 text-white overflow-hidden;
+    }
+}
+
 @layer components {
     .container {
         @apply w-full mx-auto px-4;
