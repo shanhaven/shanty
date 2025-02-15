@@ -1,6 +1,6 @@
 <script setup lang="ts">
-
 import ComingSoon from '@/components/layouts/ComingSoon.vue'
+
 </script>
 
 <template>
