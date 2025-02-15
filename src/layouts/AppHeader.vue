@@ -2,8 +2,8 @@
 import { useDark } from '@vueuse/core'
 import DarkLogo from '@/assets/defaults/logo-dark.png'
 import LightLogo from '@/assets/defaults/logo-light.png'
-import TopNavigation from '@/components/layouts/TopNavigation.vue'
-import MobileDrawer from '@/components/layouts/MobileDrawer.vue'
+import TopNavigation from '@/layouts/TopNavigation.vue'
+import MobileDrawer from '@/layouts/MobileDrawer.vue'
 
 const isDark = useDark()
 </script>

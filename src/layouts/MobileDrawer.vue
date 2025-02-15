@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { XMarkIcon, Bars3Icon } from '@heroicons/vue/24/outline'
-import { navigation } from '@/components/layouts/composables/navigation.ts'
+import { navigation } from '@/layouts/composables/navigation.ts'
 
 const mobileMenuOpen = ref(false)
 const route = useRoute()

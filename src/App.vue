@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import DarkModeToggle from '@/components/layouts/DarkModeToggle.vue'
-import Footer from '@/components/layouts/Footer.vue'
-import AppHeader from '@/components/layouts/AppHeader.vue'
+import DarkModeToggle from '@/layouts/DarkModeToggle.vue'
+import Footer from '@/layouts/AppFooter.vue'
+import AppHeader from '@/layouts/AppHeader.vue'
 </script>
 
 <template>

@@ -10,7 +10,7 @@ const isDark = useDark()
   <div class="container">
     <div class="flex justify-between">
       <div>
-        <a href="/" class="flex items-center">
+        <a href="/public" class="flex items-center">
           <img v-if="isDark" class="h-12 w-auto " :src="DarkLogo" alt="Shanty Cajulao Logo"  />
           <img v-else class="h-12 w-auto" :src="LightLogo" alt="Shanty Cajulao Logo" />
           <span class="xl:ml-4 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cajulao Shanty</span>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { navigation } from '@/components/layouts/composables/navigation.ts'
+import { navigation } from '@/layouts/composables/navigation.ts'
 
 const route = useRoute()
 </script>

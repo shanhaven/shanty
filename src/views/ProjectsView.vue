@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ComingSoon from '@/components/layouts/ComingSoon.vue'
+import ComingSoon from '@/components/ComingSoon.vue'
 
 </script>
 

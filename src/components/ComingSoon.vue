@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Dark from '../../assets/defaults/coming-soon-dark.jpg'
-import Light from '../../assets/defaults/coming-soon-light.jpg'
+import Dark from '../assets/defaults/coming-soon-dark.jpg'
+import Light from '../assets/defaults/coming-soon-light.jpg'
 import { useDark } from '@vueuse/core'
 
 const isDark = useDark();
