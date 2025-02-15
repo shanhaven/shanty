@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import DarkLogo from '@/assets/defaults/logo-dark.png'
@@ -12,6 +13,7 @@ const navigation = [
   { name: 'Blogs', path: '/blogs' },
 ]
 
+const route = useRoute() // Get the current route
 const mobileMenuOpen = ref(false)
 const isDark = useDark()
 </script>
@@ -32,7 +34,13 @@ const isDark = useDark()
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <RouterLink v-for="item in navigation" :key="item.name" :to="item.path" class="text-sm/6 font-semibold text-gray-900 dark:text-gray-100 hover:text-teal-600 dark:hover:text-teal-400">
+      <RouterLink
+        v-for="item in navigation"
+        :key="item.name"
+        :to="item.path"
+        class="text-sm/6 font-semibold transition duration-200"
+        :class="route.path === item.path ? 'text-teal-600 dark:text-teal-400' : 'text-gray-900 dark:text-gray-100 hover:text-teal-500 dark:hover:text-teal-300'"
+      >
         {{ item.name }}
       </RouterLink>
     </div>
@@ -56,7 +64,13 @@ const isDark = useDark()
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-100/10">
           <div class="space-y-2 py-6">
-            <RouterLink v-for="item in navigation" :key="item.name" :to="item.path" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-gray-100 hover:bg-gray-700">
+            <RouterLink
+              v-for="item in navigation"
+              :key="item.name"
+              :to="item.path"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition duration-200"
+              :class="route.path === item.path ? 'bg-teal-600 text-white dark:bg-teal-500' : 'text-gray-900 dark:text-gray-100 hover:bg-gray-700'"
+            >
               {{ item.name }}
             </RouterLink>
           </div>
